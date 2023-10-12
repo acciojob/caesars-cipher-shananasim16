@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-
 <html>
-  <head>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
+<head>
+    <title>ROT13 Decoder</title>
+</head>
+<body>
+    <h1>ROT13 Decoder</h1>
+    <textarea id="input" rows="5" cols="40" placeholder="Enter ROT13-encoded text"></textarea>
+    <br>
+    <button onclick="decodeROT13()">Decode</button>
+    <br>
+    <textarea id="output" rows="5" cols="40" placeholder="Decoded text will appear here" readonly></textarea>
 
-  <body>
-    <!-- the entire body must be written by student -->
-    <h1>Caeser's Cipher</h1>
-
-    <script type="text/javascript" src="./script.js"></script>
-  </body>
+    <script src="index.js"></script>
+</body>
 </html>
