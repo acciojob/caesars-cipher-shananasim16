@@ -1,16 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>ROT13 Decoder</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caesar's Cipher</title>
 </head>
 <body>
-    <h1>ROT13 Decoder</h1>
-    <textarea id="input" rows="5" cols="40" placeholder="Enter ROT13-encoded text"></textarea>
-    <br>
-    <button onclick="decodeROT13()">Decode</button>
-    <br>
-    <textarea id="output" rows="5" cols="40" placeholder="Decoded text will appear here" readonly></textarea>
+    <h1>Caesar's Cipher</h1>
+     <form id="form">
+      <label for="code">Enter encoded code:</label>
+      <input type="text" id="code" value="SERR YBIR? NPPVBWBO"/>
+      <button type="button" onclick="rot13()">Decode</button>
+    </form>
+    <div id="result"></div>
 
-    <script src="index.js"></script>
+    <script type="text/javascript" src="./script.js"></script>
+    </script>
 </body>
 </html>
